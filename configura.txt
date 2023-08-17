@@ -1,1 +1,89 @@
 ## Configuraciones para el curso de WebScrapping de freeCodeCamp
+
+
+#### 	TEMARIO
+
+## 1.-WEBSCRAPING
+## 2.-QUÉ SON LAS APIs
+## 3.-CUANDO CONVIENE CADA COSA
+## 4.-INTRODUCCION A TIs
+## 5.-WEBSCRAPING CON PYTHON
+
+1 Recopilar datos mediante un programa automatizado que consulta un servidor web
+	##WEB CRAWLING o indexación, se utiliza para indexar la inf de una pag mediante bots
+	##Un bot rastrea un sitio web, recorre todas las páginas y todos los enlaces, hasta 	la última línea del sitio web
+
+
+	# CONSIDERACIONES PREVIAS
+	¿ES LEGAL EN MI PAIS?
+		Analizar si mis consultas pueden afectar el performance de el script,
+		para resolver el problema sin afectar a posibles terceros
+
+2 API (Interfaz de programación de aplicaciones)
+
+	WebScraping :
+		Extraer información de un sitio web
+		usando un programa informátivo
+	API:
+		Proveer acceso a los datos de una aplicación,
+		sistema operativo u otro servicio.
+
+3 Cuando conviene cada cosa:
+	Antes de hacer uso del WEBSCRAPING
+	Es necesario preguntarse existe una API(y con esto evitar trabajar de más...)
+	A partir de ahí podemos tomar la decisión más acertada para nuestro problema
+
+4 Conceptos básicos sobre la Web
+	HTTPS: Protocolo seguro de transferencia de hipertexto que permite a los navegadores
+	comunicarse con los servidores we (donde se almacenan los sitios)
+
+	Existen:
+		Pedidos: "request"
+			y
+		Respuestas: "response"
+
+		A través de los métodos: GET, POST, PUT, DELETE, PATCH y se hacen de 
+		Un cliente a un Servidor
+
+
+	HTTP STATUS CODES:
+		Exito:
+			200: Success,201: Created, 203: Non- Authoritative information
+			204: No content
+		Errores de cliente:
+			400: Bad Request, 301: Unauthorized, 403 Forbidden, 404: Not Found
+			409: Conflict
+
+		Errores de Servidor:
+			500: Internal Server Error, 503: Service Unavailable, 501: Not implement
+			504: Gateway Timeout, 599: Network timeout, 502: Bad Gateway
+
+	FORMATOS EN LOS QUE SE COMPARTE LA INFORMACIÓN EN LA WEB
+		CSV: comma-separated values
+		JSON: JavaScript Object Notation
+		XML: Más antiguo
+
+	Tecnolgías usadas en la WEB
+		HTML: Estructura(Lenguaje de marcado de hipertexto)
+		JS: Funcionalidad(interactividad)
+		CSS: Estilo(Hojas de Estilo en Cascada)
+
+
+5 WEB SCRAPING CON PYTHON:
+	FLUJO DE TRABAJO:
+		PEDIMOS la información de la pag al servidor(HTTP request)
+		PARSEAMOS el HTML(u otro formato) que recibamos
+		PROCESAMOS la información y la guardamos
+
+
+	PARSEANDO CON PYTHON: USANDO Beautifulsoup
+	- Es una librería para webScraping
+	- Usada para extraer los datos de archivos HTML y XML.
+	- Crea un árbol de análisis a partir del código fuente de la página.
+
+	LINK a la web de práctica: https://scrapepark.org/spanish/
+
+
+## Instalar la libreria
+	pip install beautifulsoup4==4.11.2
+	pip install requests==2.27.1
